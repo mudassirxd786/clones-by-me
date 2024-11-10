@@ -1,0 +1,237 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI';
+     background-color: black;
+ }
+
+ .main {
+     background-image: url(assets/images/bg.jpg);
+     height: 70vh;
+     /* background-position: center center; */
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     position: relative;
+ }
+
+ .main .box {
+     height: 70vh;
+     width: 100%;
+     opacity: 0.64;
+     position: absolute;
+     top: 0;
+     background-color: black;
+ }
+
+ nav {
+     max-width: 60vw;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 62px;
+ }
+
+ nav img {
+     color: red;
+     width: 120px;
+     position: relative;
+     z-index: 10;
+ }
+
+ nav button {
+     position: relative;
+     z-index: 10;
+     margin: 7px;
+ }
+
+ .hero {
+     color: rgb(255, 255, 255);
+     height: 87.8%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: relative;
+     gap: 13px;
+     font-family: 'Segoe UI';
+     padding: 0 30px;
+     /* border: 5px solid white; */
+
+ }
+
+ .hero> :nth-child(1) {
+     font-weight: bolder;
+     font-size: 40px;
+     text-align: center;
+ }
+
+ .hero> :nth-child(2) {
+     font-size: 24px;
+     font-weight: 400;
+     text-align: center;
+ }
+
+ .hero> :nth-child(3) {
+     font-size: 16px;
+     font-weight: 400;
+     text-align: center;
+ }
+
+ .separation {
+     height: 5px;
+     background-color: rgb(36, 35, 35);
+ }
+
+ .btn {
+     padding: 6px 18px;
+     border-radius: 15px;
+     font-size: 15px;
+     border: 1px solid white; 
+     background-color: rgba(255, 255, 255, 0.179);
+     font-weight: 400;
+     color: white;
+     cursor: pointer;
+ }
+
+ .red-btn {
+     background-color: red;
+     color: white;
+ }
+ .main input{
+    padding: 9px 79px 9px 18px;
+     border-radius: 15px;
+     font-size: 11px;
+     color: white;
+     border: 2px solid rgba(255, 255, 255, 0.453);
+     background-color: rgba(25, 24, 24, 0.716);
+     font-weight: 400;
+     margin-right: 10px;
+     margin-top: 30px;
+ }
+
+ .red-btn-sm {
+     background-color: rgb(255, 0, 0);
+     color: rgb(255, 255, 255)
+ }
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    position: absolute;
+    top: 69px;
+    right: 0;
+    width: 482px;
+    
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1) {
+
+        font-size: 32px;
+    }
+   
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+    nav{
+        max-width: 80vw;
+    }
+    .secimg img{
+        padding: 0 10px;
+        width: 450px;
+    }
+    .secimg video{
+        width: 390px;
+        padding: 0 10px;
+    }
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    /* padding: 34px; */
+}
+.first > div :nth-child(2){
+    font-size: 16px;
+}
+.faqbox{
+    color: white;
+    background-color: rgb(47, 45, 45);
+    padding: 24px; 
+    max-width: 60vw;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.faqbox:hover{
+    background-color: rgb(86, 82, 82);
+    transition: all 0.3s ease-out ;
+} 
+.faqbox svg{
+    filter: invert(1);
+}
+.faq{
+    color: white;
+    background-color: black;padding: 34px;
+}
+.faq h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+
+footer .questions{
+    padding: 24px 0;
+    font-size: 15px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(137, 133, 133);
+    font-size: 13px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1300px){
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        color: rgb(255, 255, 255);
+    }
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
